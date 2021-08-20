@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+*
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --main-color: #FE5858;
+}
+
+/* +++++++header section part+++++++ */
+header
+{
+  width:100%;
+  height:35vh; /* height needed 100vh but now use mobile so that reason use this height*/
+  position: relative;
+  clip-path: polygon(50% 0%, 84% 0, 100% 0, 100% 70%, 80% 90%, 51% 100%, 18% 92%, 0% 70%, 0 0, 14% 0);
+}
+
+header::before
+{
+  content:"";
+  position: absolute;
+  top:0%;
+  left:0%;
+  right:0%;
+  bottom: 0%;
+  background: url('nature.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+   z-index: -1;
+   opacity: 0.7;
+}
+
+.navbar::before
+{
+  content:"";
+  position: absolute;
+  top:0%;
+  left:0%;
+  right:0%;
+  bottom: 0%;
+   z-index: -1;
+}
+
+.nav-item a
+{
+  color:#fff;
+  font-size: 1.5rem !important;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-item a:hover
+{
+  color: #fff;
+  transform: translateY(-3px);
+  text-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand
+{
+  color:#fff !important;
+  font-size: 2rem !important;
+}
+
+.nav-item
+{
+  margin: 0 1rem !important;
+}
+
+.hero-section
+{
+  width:100%;
+  height:inherit;
+}
+
+.center-div
+{
+  width:100%;
+  height:inherit;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.center-div h1{
+  margin-top: 10rem !important;
+  font-size: 4rem !important;
+}
+
+
+@media(max-width:360px)
+{
+  header
+  {
+    height: 100vh;
+  }
+    .center-div h1 {
+  padding-top: 8rem !important;
+      font-size: 3rem !important;
+    }
+    
+}
+
+@media(max-width:720px)
+{
+  header
+  {
+    height: 100vh;
+  }
+  
+   .center-div h1 {
+      margin-top: 2.6rem !important;
+      font-size: 3rem !important;
+    }
+    
+    .nav-item a
+{
+  color:#fff;
+  font-size: 1.3rem !important;
+  transition: transform 0.2s ease-in-out;
+}
+
+}
+
+.navbar-toggler:hover{
+  outline: none !important;
+  border:1px solid transparent !important;
+}
+
+/* +++++++header section part End+++++ */
+
+/* +++++++service section part+++++++ */
+.serviceCardIcon
+{
+  display: block;
+  margin: auto;
+  margin-top: 1.5rem; 
+}
+
+.serviceCard
+{
+  transition: all 0.4s linear;
+  border:none !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2) !important;
+  border-radius: 10px !important;
+}
+
+.serviceIconColor
+{
+  color: var(--main-color) !important;
+}
+
+.serviceHeader
+{
+  color: var(--main-color) !important;
+}
+
+.serviceCard:hover
+{
+  transform: translateY(-5px);
+}
+
+
+/* +++++++service section part End+++++*/
+
+
+/* +++++++about section part End+++++*/
+.responsive-design
+{
+  width: 23rem;
+  height: 23rem;
+}
+
+
+.About{
+  background:#FAF3F3;
+}
+
+
+.responsivePart
+{
+  padding-left: 4rem !important;
+}
+
+.AboutBtn
+{
+  padding:.6rem 3rem !important;
+  background: transparent !important;
+  border:1px solid var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+
+
+.aboutHead
+{
+  color: var(--main-color);
+}
+
+.AboutBtn:hover
+{
+  background: var(--main-color) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.counter
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.count
+{
+  font-size: 1.8rem !important;
+  color: var(--main-color);
+}
+
+.part
+{
+  color:gray !important;  
+}
+
+.padding
+{
+  padding: 0 6rem !important;
+  
+}
+
+
+/* +++++++about section part End+++++*/
+
+/* ++++ Contact section part End ++++*/
+.contactUs
+{
+  position: relative;
+}
+
+.contactUs:before
+{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(250deg, var(--main-color) 55%, #fff 0%);
+  z-index: -1;
+}
+
+form:hover .ContactBtn
+{
+  background: var(--main-color) !important;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.form-control
+{
+    border-radius: 10px;
+}
+
+.ContactBtn
+{
+  display: block;
+  margin: auto;
+  background: transparent;
+  padding: .5rem 2rem !important;
+  border-radius: 20px;
+  color: transparent;
+  
+}
+
+.contactHeader
+{
+  color:#fff;
+  text-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+/* ++++ Contact section part End ++++*/
+
+
+/* ++++ footer section part End ++++*/
+.footer
+{
+  position: relative;
+}
+
+.footer::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #313131;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  width:100%;
+  height: 100%
+}
+
+.link li{
+  list-style: none;
+  color:white;
+  margin: .4rem 0;
+}
+
+.news-text, .aboutText
+{
+  line-height: 1.7rem;
+}
+
+.btnColor
+{
+  background: var(--main-color);
+  color: white;
+  border-radius:0 20px 20px 0;
+  border: none;
+  box-shadow: none !important;
+}
+
+.input-news
+{
+  border-radius:20px 0 0 20px;
+}
+
+.scroll
+{
+  position: relative;  
+}
+
+.scroll 
+{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+}
+/* ++++ footer section part End ++++*/
